@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" fill="none" stroke="#0F0F0F" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Sacred Heart with Cross and Flames — inspired by the shop wall mural -->
+
+  <!-- Cross on top -->
+  <rect x="215" y="10" width="70" height="120" rx="4" fill="#0F0F0F"/>
+  <rect x="175" y="40" width="150" height="55" rx="4" fill="#0F0F0F"/>
+  <!-- Cross 3D edge highlights -->
+  <rect x="215" y="10" width="12" height="120" rx="2" fill="#1a1a1a"/>
+  <rect x="175" y="40" width="12" height="55" rx="2" fill="#1a1a1a"/>
+
+  <!-- Flames base (between cross and heart) -->
+  <!-- Flame 1 center -->
+  <path d="M250 130 C248 118 240 108 248 95 C250 110 258 115 255 130 Z" fill="#0F0F0F"/>
+  <!-- Flame 2 left -->
+  <path d="M222 138 C218 124 210 112 220 98 C222 114 232 118 228 138 Z" fill="#0F0F0F"/>
+  <!-- Flame 3 right -->
+  <path d="M278 138 C276 124 268 112 280 98 C280 114 290 118 285 138 Z" fill="#0F0F0F"/>
+  <!-- Flame 4 far left -->
+  <path d="M198 148 C193 132 184 118 196 103 C198 120 208 124 204 148 Z" fill="#0F0F0F"/>
+  <!-- Flame 5 far right -->
+  <path d="M302 148 C300 132 292 118 304 103 C306 120 316 124 310 148 Z" fill="#0F0F0F"/>
+
+  <!-- Heart body — large, bold, traditional style -->
+  <path d="
+    M250 520
+    C200 470 80 420 60 310
+    C42 210 90 140 160 145
+    C195 147 225 170 250 200
+    C275 170 305 147 340 145
+    C410 140 458 210 440 310
+    C420 420 300 470 250 520 Z
+  " fill="#F0EDE8" stroke="#0F0F0F" stroke-width="12"/>
+
+  <!-- Heart muscle detail lines -->
+  <path d="M190 280 C200 260 220 255 235 270" stroke="#0F0F0F" stroke-width="8" fill="none"/>
+  <path d="M310 280 C300 260 280 255 265 270" stroke="#0F0F0F" stroke-width="8" fill="none"/>
+  <path d="M220 320 C235 310 250 315 265 310 C280 305 295 310 305 325" stroke="#0F0F0F" stroke-width="7" fill="none"/>
+
+  <!-- Thorns / crown of thorns around heart -->
+  <!-- Left side thorns -->
+  <path d="M80 280 C95 270 105 285 90 295 C115 285 120 265 100 260" stroke="#0F0F0F" stroke-width="7" fill="none"/>
+  <path d="M68 330 C88 318 100 335 82 345 C108 332 115 310 92 306" stroke="#0F0F0F" stroke-width="7" fill="none"/>
+  <!-- Right side thorns -->
+  <path d="M420 280 C405 270 395 285 410 295 C385 285 380 265 400 260" stroke="#0F0F0F" stroke-width="7" fill="none"/>
+  <path d="M432 330 C412 318 400 335 418 345 C392 332 385 310 408 306" stroke="#0F0F0F" stroke-width="7" fill="none"/>
+
+  <!-- Drip from bottom of heart -->
+  <path d="M242 515 C240 535 238 548 242 562 C245 575 252 580 250 590 C248 580 255 575 258 562 C262 548 260 535 258 515" fill="#0F0F0F" stroke="none"/>
+
+  <!-- Bold outline re-stroke over top -->
+  <path d="
+    M250 520
+    C200 470 80 420 60 310
+    C42 210 90 140 160 145
+    C195 147 225 170 250 200
+    C275 170 305 147 340 145
+    C410 140 458 210 440 310
+    C420 420 300 470 250 520 Z
+  " fill="none" stroke="#0F0F0F" stroke-width="14"/>
+</svg>

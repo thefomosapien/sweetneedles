@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-label="Sweet Needles Tattoo">
+  <defs>
+    <!-- Spray paint distortion filter -->
+    <filter id="spray" x="-5%" y="-10%" width="110%" height="130%" color-interpolation-filters="sRGB">
+      <!-- Turbulence creates rough, organic edge variation -->
+      <feTurbulence type="turbulence" baseFrequency="0.018 0.032" numOctaves="4" seed="7" result="turbulence"/>
+      <!-- Displace the text shape to simulate hand-painted imperfections -->
+      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="5" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
+      <!-- Slight blur to simulate paint bleed at edges -->
+      <feGaussianBlur in="displaced" stdDeviation="0.6" result="blurred"/>
+      <!-- Composite back for density -->
+      <feComposite in="blurred" in2="SourceGraphic" operator="over"/>
+    </filter>
+
+    <!-- Rougher spray filter for "TATTOO" subtitle -->
+    <filter id="spray2" x="-5%" y="-10%" width="110%" height="130%" color-interpolation-filters="sRGB">
+      <feTurbulence type="turbulence" baseFrequency="0.022 0.04" numOctaves="3" seed="13" result="turbulence"/>
+      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="4" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
+      <feGaussianBlur in="displaced" stdDeviation="0.5" result="blurred"/>
+      <feComposite in="blurred" in2="SourceGraphic" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Spray paint bleed layers — stacked at slight offsets, low opacity -->
+  <!-- These simulate the uneven ink buildup of spray paint -->
+  <text x="450" y="148" text-anchor="middle"
+    font-family="'Bebas Neue', 'Arial Black', sans-serif"
+    font-size="148" font-weight="900" fill="#1a1a1a" opacity="0.18"
+    filter="url(#spray)" dx="-2" dy="2">SWEET NEEDLES</text>
+
+  <text x="450" y="148" text-anchor="middle"
+    font-family="'Bebas Neue', 'Arial Black', sans-serif"
+    font-size="148" font-weight="900" fill="#0d0d0d" opacity="0.22"
+    filter="url(#spray)" dx="2" dy="-1">SWEET NEEDLES</text>
+
+  <!-- Main text body -->
+  <text x="450" y="148" text-anchor="middle"
+    font-family="'Bebas Neue', 'Arial Black', sans-serif"
+    font-size="148" font-weight="900" fill="#111111"
+    filter="url(#spray)">SWEET NEEDLES</text>
+
+  <!-- TATTOO — bleed layers -->
+  <text x="450" y="230" text-anchor="middle"
+    font-family="'Bebas Neue', 'Arial Black', sans-serif"
+    font-size="96" font-weight="900" fill="#1a1a1a" opacity="0.2"
+    filter="url(#spray2)" dx="-1.5" dy="1.5">TATTOO</text>
+
+  <text x="450" y="230" text-anchor="middle"
+    font-family="'Bebas Neue', 'Arial Black', sans-serif"
+    font-size="96" font-weight="900" fill="#0d0d0d" opacity="0.2"
+    filter="url(#spray2)" dx="1.5" dy="-1">TATTOO</text>
+
+  <!-- Main TATTOO -->
+  <text x="450" y="230" text-anchor="middle"
+    font-family="'Bebas Neue', 'Arial Black', sans-serif"
+    font-size="96" font-weight="900" fill="#111111"
+    filter="url(#spray2)">TATTOO</text>
+</svg>

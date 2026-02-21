@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── SVG Filter Definitions (hidden) ─────────────────────────── */
+/* Rendered in layout.tsx as an inline SVG */
+
+/* ─── CSS Custom Properties ────────────────────────────────────── */
+:root {
+  --font-bebas: 'Bebas Neue', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+
+  /* Gray cinderblock: exterior / hero sections */
+  --cb-gray-base: #7B7869;
+  --cb-gray-a: #7B7869;
+  --cb-gray-b: #737060;
+  --cb-gray-c: #82806F;
+  --cb-mortar-gray: rgba(50, 46, 38, 0.55);
+
+  /* White cinderblock: interior sections */
+  --cb-white-base: #F0EDE8;
+  --cb-mortar-light: rgba(180, 172, 160, 0.45);
+}
+
+/* ─── Base ──────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--cb-white-base);
+  color: #0F0F0F;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Cinderblock Textures ─────────────────────────────────────── */
+
+/*
+  HOW IT WORKS:
+  Real cinderblock is ~16" wide × 8" tall with ~3/8" mortar joints.
+  We scale this to CSS pixels: 80px wide × 40px tall blocks, 3px mortar.
+  Alternating rows are offset by 40px (half a block width) to create the
+  running bond pattern. Three slightly different block tones are cycled
+  using background-color variations. The SVG grain filter adds grit.
+
+  The background-image layers (bottom to top):
+  1. Color banding — subtle vertical gradient simulating concrete pour variation
+  2. Horizontal mortar joints
+  3. Vertical mortar joints (row 1, un-offset)
+  4. Vertical mortar joints (row 2, offset by 40px)
+  5. Corner shadow vignette for depth
+*/
+
+.cinderblock-gray {
+  position: relative;
+  background-color: var(--cb-gray-base);
+  background-image:
+    /* Vignette shadow for depth */
+    radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.35) 100%),
+    /* Stain / age patches */
+    radial-gradient(ellipse 120px 80px at 15% 30%, rgba(0,0,0,0.08) 0%, transparent 100%),
+    radial-gradient(ellipse 90px 60px at 75% 70%, rgba(0,0,0,0.06) 0%, transparent 100%),
+    /* Vertical mortar — row 2 (offset) */
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 37px,
+      var(--cb-mortar-gray) 37px,
+      var(--cb-mortar-gray) 40px,
+      transparent 40px,
+      transparent 77px,
+      var(--cb-mortar-gray) 77px,
+      var(--cb-mortar-gray) 80px
+    ),
+    /* Vertical mortar — row 1 */
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 77px,
+      var(--cb-mortar-gray) 77px,
+      var(--cb-mortar-gray) 80px
+    ),
+    /* Horizontal mortar */
+    repeating-linear-gradient(
+      180deg,
+      transparent 0px,
+      transparent 37px,
+      var(--cb-mortar-gray) 37px,
+      var(--cb-mortar-gray) 40px
+    ),
+    /* Concrete pour banding */
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.04) 0%,
+      rgba(0,0,0,0.04) 33%,
+      rgba(255,255,255,0.03) 66%,
+      rgba(0,0,0,0.03) 100%
+    );
+  background-size:
+    100% 100%,
+    200px 160px,
+    180px 200px,
+    80px 80px,
+    80px 80px,
+    80px 40px,
+    100% 100%;
+  filter: url(#cinderblock-grain);
+}
+
+.cinderblock-white {
+  position: relative;
+  background-color: var(--cb-white-base);
+  background-image:
+    /* Vignette — very subtle */
+    radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.08) 100%),
+    /* Age patches */
+    radial-gradient(ellipse 200px 100px at 80% 20%, rgba(0,0,0,0.03) 0%, transparent 100%),
+    /* Vertical mortar — row 2 (offset) */
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 37px,
+      var(--cb-mortar-light) 37px,
+      var(--cb-mortar-light) 39px,
+      transparent 39px,
+      transparent 77px,
+      var(--cb-mortar-light) 77px,
+      var(--cb-mortar-light) 79px
+    ),
+    /* Vertical mortar — row 1 */
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 77px,
+      var(--cb-mortar-light) 77px,
+      var(--cb-mortar-light) 79px
+    ),
+    /* Horizontal mortar */
+    repeating-linear-gradient(
+      180deg,
+      transparent 0px,
+      transparent 37px,
+      var(--cb-mortar-light) 37px,
+      var(--cb-mortar-light) 39px
+    );
+  background-size:
+    100% 100%,
+    300px 200px,
+    80px 80px,
+    80px 80px,
+    80px 40px;
+  filter: url(#cinderblock-grain);
+}
+
+/* ─── Flash Art Overlay (interior sections) ─────────────────────── */
+.flash-wall {
+  position: relative;
+  overflow: hidden;
+}
+
+.flash-wall::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/svg/flash-sacred-heart.svg'), url('/svg/flash-swallow.svg'), url('/svg/flash-dragon.svg');
+  background-repeat: no-repeat;
+  background-position: -8% 5%, 98% 55%, 45% 105%;
+  background-size: 42vw auto, 38vw auto, 44vw auto;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Tiger mural variant — used on the main artists / about sections */
+.flash-wall-tiger::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/svg/flash-horses.svg'), url('/svg/flash-flower-vase.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%, -5% 90%;
+  background-size: 55vw auto, 28vw auto;
+  opacity: 0.065;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.flash-wall > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── Typography Utilities ──────────────────────────────────────── */
+.font-bebas {
+  font-family: var(--font-bebas);
+  letter-spacing: 0.05em;
+}
+
+.spray-text {
+  font-family: var(--font-bebas);
+  letter-spacing: 0.04em;
+  filter: url(#spray-paint);
+}
+
+/* ─── Shimmer Skeleton ──────────────────────────────────────────── */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #e0dcd5 0%,
+    #ece9e3 50%,
+    #e0dcd5 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite linear;
+}
+
+/* ─── Button Base ───────────────────────────────────────────────── */
+.btn-primary {
+  display: inline-block;
+  background-color: #C41E1E;
+  color: #FFFDF8;
+  font-family: var(--font-bebas);
+  letter-spacing: 0.08em;
+  font-size: 1.125rem;
+  padding: 0.75rem 2rem;
+  border: 2px solid #C41E1E;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: #C41E1E;
+}
+
+.btn-outline {
+  display: inline-block;
+  background-color: transparent;
+  color: #FFFDF8;
+  font-family: var(--font-bebas);
+  letter-spacing: 0.08em;
+  font-size: 1.125rem;
+  padding: 0.75rem 2rem;
+  border: 2px solid #FFFDF8;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: #FFFDF8;
+  color: #0F0F0F;
+}
+
+.btn-outline-dark {
+  display: inline-block;
+  background-color: transparent;
+  color: #0F0F0F;
+  font-family: var(--font-bebas);
+  letter-spacing: 0.08em;
+  font-size: 1.125rem;
+  padding: 0.75rem 2rem;
+  border: 2px solid #0F0F0F;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-outline-dark:hover {
+  background-color: #0F0F0F;
+  color: #FFFDF8;
+}
+
+/* ─── Style Tag Pills ───────────────────────────────────────────── */
+.style-pill {
+  display: inline-block;
+  border: 1.5px solid #0F0F0F;
+  color: #0F0F0F;
+  font-family: var(--font-bebas);
+  letter-spacing: 0.06em;
+  font-size: 0.875rem;
+  padding: 0.15rem 0.75rem;
+}
+
+/* ─── Form Inputs ───────────────────────────────────────────────── */
+.form-input {
+  width: 100%;
+  background-color: rgba(255,253,248,0.9);
+  border: 2px solid #D8D3CB;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  color: #0F0F0F;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  border-color: #0F0F0F;
+}
+
+.form-input.error {
+  border-color: #C41E1E;
+}
+
+.form-label {
+  display: block;
+  font-family: var(--font-bebas);
+  letter-spacing: 0.06em;
+  font-size: 1rem;
+  color: #0F0F0F;
+  margin-bottom: 0.25rem;
+}
+
+/* ─── Section Spacing ───────────────────────────────────────────── */
+.section-padding {
+  padding: 4rem 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 6rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 7rem 4rem;
+  }
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F0EDE8;
+}
+::-webkit-scrollbar-thumb {
+  background: #7B7869;
+}
+
+/* ─── Animations ─────────────────────────────────────────────────── */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes drawerIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes drawerOut {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}

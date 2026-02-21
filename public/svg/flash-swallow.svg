@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" fill="none" aria-hidden="true">
+  <!-- Traditional Swallow with TRUE LOVE Banner — inspired by the shop wall mural -->
+
+  <!-- Left wing — sweeping long tail -->
+  <path d="
+    M300 200
+    C270 190 230 170 180 130
+    C140 98 80 60 20 30
+    C60 55 100 100 120 140
+    C140 175 155 195 175 205
+    C200 218 240 218 265 215
+    Z
+  " fill="#0F0F0F" stroke="#0F0F0F" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Right wing — long forked tail sweeping up right -->
+  <path d="
+    M300 200
+    C330 185 380 155 440 105
+    C490 62 560 20 600 5
+    C565 30 520 75 500 115
+    C478 158 460 182 435 198
+    C410 212 360 215 330 215
+    Z
+  " fill="#0F0F0F" stroke="#0F0F0F" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Body of swallow — bold and round -->
+  <ellipse cx="295" cy="235" rx="80" ry="55" fill="#0F0F0F" stroke="#0F0F0F" stroke-width="6"/>
+
+  <!-- White chest patch -->
+  <ellipse cx="285" cy="248" rx="35" ry="25" fill="#F0EDE8"/>
+
+  <!-- Head -->
+  <circle cx="230" cy="205" r="42" fill="#0F0F0F" stroke="#0F0F0F" stroke-width="4"/>
+
+  <!-- Eye — white with black pupil -->
+  <circle cx="218" cy="198" r="10" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="3"/>
+  <circle cx="219" cy="198" r="5" fill="#0F0F0F"/>
+  <circle cx="216" cy="195" r="2" fill="#F0EDE8"/>
+
+  <!-- Beak -->
+  <path d="M190 210 L165 220 L192 225 Z" fill="#0F0F0F" stroke="#0F0F0F" stroke-width="2"/>
+
+  <!-- Flower / peony top of bird (from the photo) -->
+  <!-- Petals -->
+  <ellipse cx="300" cy="155" rx="22" ry="30" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="5" transform="rotate(-15, 300, 155)"/>
+  <ellipse cx="325" cy="148" rx="22" ry="30" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="5" transform="rotate(20, 325, 148)"/>
+  <ellipse cx="275" cy="148" rx="22" ry="30" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="5" transform="rotate(-30, 275, 148)"/>
+  <ellipse cx="310" cy="132" rx="18" ry="26" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="4" transform="rotate(5, 310, 132)"/>
+  <ellipse cx="290" cy="128" rx="18" ry="26" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="4" transform="rotate(-10, 290, 128)"/>
+  <!-- Flower center -->
+  <circle cx="300" cy="145" r="18" fill="#0F0F0F" stroke="#0F0F0F" stroke-width="3"/>
+  <circle cx="300" cy="145" r="10" fill="#F0EDE8"/>
+
+  <!-- Wing feather detail lines on left wing -->
+  <path d="M240 210 C215 200 185 180 155 160" stroke="#F0EDE8" stroke-width="3" fill="none"/>
+  <path d="M245 220 C215 215 180 205 145 195" stroke="#F0EDE8" stroke-width="3" fill="none"/>
+
+  <!-- Tail fork split -->
+  <path d="M340 268 C370 295 410 320 460 340 C440 315 415 285 395 265" fill="#0F0F0F" stroke="#0F0F0F" stroke-width="2"/>
+  <path d="M345 275 C370 310 395 345 420 375 C405 345 385 308 370 278" fill="#0F0F0F" stroke="#0F0F0F" stroke-width="2"/>
+
+  <!-- Banner / ribbon — TRUE LOVE -->
+  <!-- Banner left curl -->
+  <path d="M145 340 C130 330 118 345 125 360 C115 358 108 370 120 378 L200 388 L205 360 Z" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Banner body left -->
+  <path d="M195 338 L320 335 L325 380 L200 383 Z" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="6"/>
+  <!-- Banner body right -->
+  <path d="M318 335 L430 338 L435 385 L322 382 Z" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="6"/>
+  <!-- Banner right curl -->
+  <path d="M428 340 C445 330 457 345 450 360 C460 358 468 370 455 378 L380 388 L375 360 Z" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Scroll curls at ends -->
+  <path d="M130 370 C115 375 112 390 125 395 C118 392 120 380 132 382" fill="#0F0F0F" stroke="#0F0F0F" stroke-width="3"/>
+  <path d="M452 370 C467 375 470 390 458 395 C465 392 462 380 450 382" fill="#0F0F0F" stroke="#0F0F0F" stroke-width="3"/>
+
+  <!-- TRUE text -->
+  <text x="227" y="371" font-family="'Arial Black', 'Bebas Neue', sans-serif" font-size="32" font-weight="900" fill="#0F0F0F" text-anchor="middle" letter-spacing="2">TRUE</text>
+  <!-- LOVE text -->
+  <text x="377" y="371" font-family="'Arial Black', 'Bebas Neue', sans-serif" font-size="32" font-weight="900" fill="#0F0F0F" text-anchor="middle" letter-spacing="2">LOVE</text>
+</svg>
