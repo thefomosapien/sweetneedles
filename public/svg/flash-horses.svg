@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" fill="none" aria-hidden="true">
+  <!-- Three Pharaoh's Horses in Floral Wreath Circle — inspired by the main workspace wall mural -->
+
+  <!-- Outer wreath circle outline -->
+  <circle cx="260" cy="260" r="235" stroke="#0F0F0F" stroke-width="8" fill="none"/>
+  <circle cx="260" cy="260" r="228" stroke="#0F0F0F" stroke-width="2.5" fill="none" stroke-dasharray="4 14"/>
+
+  <!-- Wreath: flowers and leaves arranged around the ring -->
+  <!-- Top cluster -->
+  <g transform="translate(260,30)">
+    <ellipse cx="-10" cy="0" rx="9" ry="13" fill="#0F0F0F" transform="rotate(-25,-10,0)"/>
+    <ellipse cx="0" cy="-5" rx="9" ry="13" fill="#0F0F0F" transform="rotate(0,0,-5)"/>
+    <ellipse cx="10" cy="0" rx="9" ry="13" fill="#0F0F0F" transform="rotate(25,10,0)"/>
+    <circle cx="0" cy="-2" r="7" fill="#F0EDE8"/>
+    <circle cx="0" cy="-2" r="3" fill="#0F0F0F"/>
+  </g>
+  <!-- Bottom cluster -->
+  <g transform="translate(260,492)">
+    <ellipse cx="-10" cy="5" rx="9" ry="13" fill="#0F0F0F" transform="rotate(25,-10,5)"/>
+    <ellipse cx="0" cy="8" rx="9" ry="13" fill="#0F0F0F"/>
+    <ellipse cx="10" cy="5" rx="9" ry="13" fill="#0F0F0F" transform="rotate(-25,10,5)"/>
+    <circle cx="0" cy="6" r="7" fill="#F0EDE8"/>
+    <circle cx="0" cy="6" r="3" fill="#0F0F0F"/>
+  </g>
+  <!-- Leaves / sprigs around ring -->
+  <ellipse cx="52" cy="180" rx="7" ry="12" fill="#0F0F0F" transform="rotate(60,52,180)"/>
+  <ellipse cx="36" cy="220" rx="7" ry="12" fill="#0F0F0F" transform="rotate(80,36,220)"/>
+  <ellipse cx="36" cy="300" rx="7" ry="12" fill="#0F0F0F" transform="rotate(100,36,300)"/>
+  <ellipse cx="52" cy="340" rx="7" ry="12" fill="#0F0F0F" transform="rotate(120,52,340)"/>
+  <ellipse cx="468" cy="180" rx="7" ry="12" fill="#0F0F0F" transform="rotate(-60,468,180)"/>
+  <ellipse cx="484" cy="220" rx="7" ry="12" fill="#0F0F0F" transform="rotate(-80,484,220)"/>
+  <ellipse cx="484" cy="300" rx="7" ry="12" fill="#0F0F0F" transform="rotate(-100,484,300)"/>
+  <ellipse cx="468" cy="340" rx="7" ry="12" fill="#0F0F0F" transform="rotate(-120,468,340)"/>
+  <!-- Side flowers -->
+  <g transform="translate(26,260)">
+    <ellipse cx="-8" cy="0" rx="8" ry="11" fill="#0F0F0F" transform="rotate(90,-8,0)"/>
+    <ellipse cx="0" cy="-8" rx="8" ry="11" fill="#0F0F0F"/>
+    <ellipse cx="8" cy="0" rx="8" ry="11" fill="#0F0F0F" transform="rotate(-90,8,0)"/>
+    <circle cx="0" cy="0" r="6" fill="#F0EDE8"/>
+  </g>
+  <g transform="translate(494,260)">
+    <ellipse cx="-8" cy="0" rx="8" ry="11" fill="#0F0F0F" transform="rotate(90,-8,0)"/>
+    <ellipse cx="0" cy="-8" rx="8" ry="11" fill="#0F0F0F"/>
+    <ellipse cx="8" cy="0" rx="8" ry="11" fill="#0F0F0F" transform="rotate(-90,8,0)"/>
+    <circle cx="0" cy="0" r="6" fill="#F0EDE8"/>
+  </g>
+
+  <!-- ══ THREE PHARAOH'S HORSES ══ -->
+  <!-- Bold black, running / galloping left to right, overlapping, flowing manes. -->
+  <!-- Background horse (furthest back) -->
+  <ellipse cx="315" cy="318" rx="108" ry="68" fill="#0F0F0F" opacity="0.65"/>
+  <path d="M232 288 C244 258 262 240 282 228 C292 244 290 265 278 280 Z" fill="#0F0F0F" opacity="0.65"/>
+  <path d="M282 228 C292 210 310 196 326 192 C330 205 322 220 310 228 Z" fill="#0F0F0F" opacity="0.65"/>
+  <circle cx="318" cy="205" r="7" fill="#F0EDE8" opacity="0.8"/>
+  <circle cx="319" cy="205" r="4" fill="#0F0F0F"/>
+  <path d="M282 228 C270 214 265 198 271 183 C278 198 280 212 281 226" stroke="#F0EDE8" stroke-width="4" fill="none" opacity="0.45"/>
+  <path d="M275 242 C261 228 256 210 264 194 C272 210 274 226 274 242" stroke="#F0EDE8" stroke-width="4" fill="none" opacity="0.45"/>
+  <!-- Ear bg horse -->
+  <path d="M326 192 C332 179 344 176 346 186 C339 184 332 187 328 193 Z" fill="#0F0F0F" opacity="0.65"/>
+
+  <!-- Middle horse -->
+  <ellipse cx="278" cy="330" rx="118" ry="75" fill="#0F0F0F"/>
+  <path d="M172 298 C162 272 174 250 190 242 C190 262 186 282 188 300 Z" fill="#0F0F0F"/>
+  <path d="M205 288 C218 255 238 235 260 220 C270 238 268 262 256 278 Z" fill="#0F0F0F"/>
+  <!-- Head middle horse -->
+  <path d="M260 220 C272 200 292 185 310 180 C314 194 306 210 293 218 C305 214 318 217 322 230 C313 240 297 238 288 228 C285 238 276 244 267 238 C263 230 260 225 260 220 Z" fill="#0F0F0F"/>
+  <path d="M267 238 C259 247 256 256 261 261 C268 257 271 247 267 238 Z" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="3"/>
+  <circle cx="297" cy="198" r="9" fill="#F0EDE8"/>
+  <circle cx="298" cy="198" r="5" fill="#0F0F0F"/>
+  <circle cx="295" cy="196" r="2" fill="#F0EDE8"/>
+  <path d="M310 180 C316 167 328 163 330 174 C323 171 315 175 311 181 Z" fill="#0F0F0F"/>
+  <!-- Mane middle -->
+  <path d="M260 220 C246 204 240 186 247 170 C254 186 257 204 258 220" stroke="#F0EDE8" stroke-width="5" fill="none"/>
+  <path d="M252 236 C235 219 229 198 238 180 C247 200 250 218 250 236" stroke="#F0EDE8" stroke-width="5" fill="none"/>
+  <path d="M242 252 C224 234 218 210 229 190 C240 212 243 232 241 252" stroke="#F0EDE8" stroke-width="4" fill="none"/>
+  <!-- Body highlight -->
+  <path d="M195 322 C222 306 258 302 287 308 C315 314 336 328 348 344" stroke="#F0EDE8" stroke-width="11" fill="none" stroke-linecap="round" opacity="0.2"/>
+
+  <!-- Foreground horse (front, most prominent) -->
+  <ellipse cx="242" cy="348" rx="126" ry="80" fill="#0F0F0F"/>
+  <path d="M128 318 C116 290 128 265 145 256 C145 276 141 298 142 318 Z" fill="#0F0F0F"/>
+  <path d="M178 304 C192 268 214 245 238 228 C250 248 248 272 234 290 Z" fill="#0F0F0F"/>
+  <!-- Head foreground horse — neck arched, tossed high -->
+  <path d="M238 228 C250 205 272 188 292 182 C297 198 288 216 274 224 C287 220 302 223 305 237 C295 248 278 246 268 235 C265 246 255 252 246 246 C241 237 238 232 238 228 Z" fill="#0F0F0F"/>
+  <path d="M246 246 C237 256 233 266 239 272 C247 267 251 256 246 246 Z" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="3"/>
+  <ellipse cx="243" cy="258" rx="4" ry="3" fill="#0F0F0F" opacity="0.6"/>
+  <!-- Eye — prominent -->
+  <circle cx="278" cy="198" r="11" fill="#F0EDE8"/>
+  <circle cx="279" cy="198" r="6" fill="#0F0F0F"/>
+  <circle cx="276" cy="196" r="2.5" fill="#F0EDE8"/>
+  <path d="M292 182 C298 168 312 164 314 175 C307 172 299 176 293 183 Z" fill="#0F0F0F"/>
+  <!-- Big flowing mane — foreground horse -->
+  <path d="M238 228 C222 208 215 186 223 167 C231 188 234 208 236 228" stroke="#F0EDE8" stroke-width="7" fill="none"/>
+  <path d="M228 246 C210 225 202 200 212 178 C223 202 227 224 226 246" stroke="#F0EDE8" stroke-width="7" fill="none"/>
+  <path d="M216 264 C195 240 187 212 200 188 C214 214 218 240 215 264" stroke="#F0EDE8" stroke-width="5" fill="none"/>
+  <path d="M202 278 C180 252 173 222 188 197 C204 224 207 252 202 278" stroke="#F0EDE8" stroke-width="4" fill="none"/>
+  <!-- Body highlight foreground -->
+  <path d="M148 338 C178 320 218 315 250 321 C280 327 305 342 318 360" stroke="#F0EDE8" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.2"/>
+
+  <!-- Ground line -->
+  <path d="M82 400 C138 386 200 382 260 384 C320 386 382 392 438 400" stroke="#0F0F0F" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

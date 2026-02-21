@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" fill="none" aria-hidden="true">
+  <!-- Traditional Flower Vase with Roses — inspired by the shop wall mural -->
+
+  <!-- Stem and leaves -->
+  <path d="M200 280 L200 195" stroke="#0F0F0F" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- Left branch -->
+  <path d="M200 240 C178 228 158 225 148 215" stroke="#0F0F0F" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M200 255 C172 248 152 250 140 244" stroke="#0F0F0F" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Right branch -->
+  <path d="M200 240 C222 228 242 225 252 215" stroke="#0F0F0F" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M200 255 C228 248 248 250 260 244" stroke="#0F0F0F" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- Leaves left -->
+  <path d="M148 215 C132 200 128 180 145 172 C145 185 148 200 152 210 Z" fill="#0F0F0F"/>
+  <path d="M140 244 C118 236 112 215 132 208 C132 220 138 234 144 242 Z" fill="#0F0F0F"/>
+  <!-- Leaves right -->
+  <path d="M252 215 C268 200 272 180 255 172 C255 185 252 200 248 210 Z" fill="#0F0F0F"/>
+  <path d="M260 244 C282 236 288 215 268 208 C268 220 262 234 256 242 Z" fill="#0F0F0F"/>
+
+  <!-- Center main rose -->
+  <!-- Rose petals, layered outward in -->
+  <!-- Outer petals -->
+  <path d="M200 195 C185 168 168 158 165 140 C178 148 192 160 200 175 C208 160 222 148 235 140 C232 158 215 168 200 195 Z" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="6"/>
+  <path d="M200 192 C178 182 162 168 155 148 C172 155 188 168 200 185 Z" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="5"/>
+  <path d="M200 192 C222 182 238 168 245 148 C228 155 212 168 200 185 Z" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="5"/>
+  <!-- Upper petals -->
+  <ellipse cx="200" cy="160" rx="28" ry="22" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="6"/>
+  <ellipse cx="175" cy="152" rx="22" ry="18" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="5" transform="rotate(-20,175,152)"/>
+  <ellipse cx="225" cy="152" rx="22" ry="18" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="5" transform="rotate(20,225,152)"/>
+  <!-- Inner rose -->
+  <ellipse cx="200" cy="158" rx="18" ry="15" fill="#0F0F0F" stroke="#0F0F0F" stroke-width="3"/>
+  <ellipse cx="200" cy="156" rx="10" ry="8" fill="#F0EDE8"/>
+  <path d="M195 154 C198 148 202 148 205 154" stroke="#0F0F0F" stroke-width="3" fill="none"/>
+
+  <!-- Left smaller rose -->
+  <path d="M148 215 C135 196 125 188 122 172 C132 180 143 192 148 205 C153 192 164 180 174 172 C171 188 161 196 148 215 Z" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="5"/>
+  <ellipse cx="148" cy="188" rx="20" ry="16" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="5"/>
+  <ellipse cx="148" cy="186" rx="11" ry="9" fill="#0F0F0F"/>
+  <ellipse cx="148" cy="184" rx="6" ry="5" fill="#F0EDE8"/>
+
+  <!-- Right smaller rose -->
+  <path d="M252 215 C265 196 275 188 278 172 C268 180 257 192 252 205 C247 192 236 180 226 172 C229 188 239 196 252 215 Z" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="5"/>
+  <ellipse cx="252" cy="188" rx="20" ry="16" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="5"/>
+  <ellipse cx="252" cy="186" rx="11" ry="9" fill="#0F0F0F"/>
+  <ellipse cx="252" cy="184" rx="6" ry="5" fill="#F0EDE8"/>
+
+  <!-- Vase body — classical urn shape -->
+  <!-- Vase neck -->
+  <path d="M175 280 C168 295 162 315 160 335 L240 335 C238 315 232 295 225 280 Z" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="8"/>
+
+  <!-- Vase body main -->
+  <path d="
+    M160 335
+    C145 355 132 385 130 415
+    C128 445 140 475 160 490
+    C178 503 222 503 240 490
+    C260 475 272 445 270 415
+    C268 385 255 355 240 335
+    Z
+  " fill="#F0EDE8" stroke="#0F0F0F" stroke-width="9" stroke-linejoin="round"/>
+
+  <!-- Vase base / foot -->
+  <path d="M148 490 C148 505 152 518 200 520 C248 518 252 505 252 490 Z" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="8"/>
+  <rect x="152" y="518" width="96" height="14" rx="3" fill="#0F0F0F"/>
+
+  <!-- Vase rim at top -->
+  <path d="M165 280 C170 272 185 268 200 268 C215 268 230 272 235 280 L225 280 L175 280 Z" fill="#0F0F0F"/>
+
+  <!-- Vase decorative band -->
+  <path d="M132 425 L268 425" stroke="#0F0F0F" stroke-width="5"/>
+  <path d="M136 438 L264 438" stroke="#0F0F0F" stroke-width="3"/>
+
+  <!-- Vase scroll handles -->
+  <path d="M130 380 C108 378 98 395 110 412 C120 425 135 420 140 408" stroke="#0F0F0F" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M270 380 C292 378 302 395 290 412 C280 425 265 420 260 408" stroke="#0F0F0F" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+  <!-- Vase decorative fleur motif -->
+  <path d="M185 460 C188 445 200 440 200 440 C200 440 212 445 215 460 C210 453 200 450 200 450 C200 450 190 453 185 460 Z" fill="#0F0F0F"/>
+  <circle cx="200" cy="438" r="7" fill="#0F0F0F"/>
+  <circle cx="200" cy="438" r="3" fill="#F0EDE8"/>
+
+  <!-- Circular dot details on vase body -->
+  <circle cx="200" cy="390" r="5" fill="#0F0F0F"/>
+  <circle cx="175" cy="400" r="4" fill="#0F0F0F"/>
+  <circle cx="225" cy="400" r="4" fill="#0F0F0F"/>
+  <circle cx="165" cy="415" r="4" fill="#0F0F0F"/>
+  <circle cx="235" cy="415" r="4" fill="#0F0F0F"/>
+</svg>

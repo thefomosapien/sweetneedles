@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 620" fill="none" aria-hidden="true">
+  <!-- Traditional Japanese Dragon — inspired by the shop wall mural -->
+
+  <!-- Dragon body — coiling serpentine form -->
+  <!-- Main body coil, bottom loop -->
+  <path d="
+    M250 580
+    C180 575 120 540 100 480
+    C80 420 110 360 155 320
+    C180 298 210 290 235 275
+    C255 262 268 248 262 228
+    C255 205 232 192 218 175
+    C200 155 192 130 205 105
+    C215 85 235 70 258 65
+    C285 58 315 68 335 88
+    C358 112 355 145 338 168
+    C325 185 305 190 295 208
+    C288 222 292 240 308 252
+    C328 268 358 268 382 255
+    C410 240 428 212 425 182
+    C420 148 398 120 370 108
+  " stroke="#0F0F0F" stroke-width="52" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Body highlight line — scales -->
+  <path d="
+    M250 580
+    C180 575 120 540 100 480
+    C80 420 110 360 155 320
+    C180 298 210 290 235 275
+    C255 262 268 248 262 228
+    C255 205 232 192 218 175
+    C200 155 192 130 205 105
+    C215 85 235 70 258 65
+    C285 58 315 68 335 88
+    C358 112 355 145 338 168
+    C325 185 305 190 295 208
+    C288 222 292 240 308 252
+    C328 268 358 268 382 255
+    C410 240 428 212 425 182
+    C420 148 398 120 370 108
+  " stroke="#F0EDE8" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 24"/>
+
+  <!-- Outer body outline -->
+  <path d="
+    M250 580
+    C180 575 120 540 100 480
+    C80 420 110 360 155 320
+    C180 298 210 290 235 275
+    C255 262 268 248 262 228
+    C255 205 232 192 218 175
+    C200 155 192 130 205 105
+    C215 85 235 70 258 65
+    C285 58 315 68 335 88
+    C358 112 355 145 338 168
+    C325 185 305 190 295 208
+    C288 222 292 240 308 252
+    C328 268 358 268 382 255
+    C410 240 428 212 425 182
+    C420 148 398 120 370 108
+  " stroke="#0F0F0F" stroke-width="56" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
+
+  <!-- Dragon head -->
+  <!-- Skull/head shape — angular and fierce -->
+  <path d="
+    M365 108
+    C380 90 405 75 420 60
+    C432 48 438 35 430 25
+    C418 12 400 18 388 28
+    C375 15 360 8 345 12
+    C325 18 318 38 325 55
+    C330 68 345 78 358 85
+    Z
+  " fill="#0F0F0F" stroke="#0F0F0F" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Snout -->
+  <path d="M318 52 C305 48 295 56 298 68 C302 80 318 82 328 75 Z" fill="#0F0F0F"/>
+
+  <!-- Eye — wild and circular -->
+  <circle cx="408" cy="42" r="14" fill="#F0EDE8" stroke="#0F0F0F" stroke-width="4"/>
+  <circle cx="408" cy="42" r="7" fill="#0F0F0F"/>
+  <circle cx="404" cy="38" r="3" fill="#F0EDE8"/>
+
+  <!-- Horns -->
+  <path d="M415 22 C418 5 430 -5 438 8 C432 4 425 10 420 22 Z" fill="#0F0F0F"/>
+  <path d="M398 16 C395 0 380 -8 376 6 C382 2 392 8 395 18 Z" fill="#0F0F0F"/>
+
+  <!-- Whiskers -->
+  <path d="M310 60 C285 50 265 55 250 70" stroke="#0F0F0F" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M312 72 C288 72 270 80 258 98" stroke="#0F0F0F" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Claws — left claw reaching -->
+  <path d="M148 450 C130 460 115 452 112 438 C108 424 120 415 132 420 C122 418 118 428 128 433 C138 438 148 432 152 420" stroke="#0F0F0F" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M152 435 C140 450 130 458 125 470 C130 456 142 450 155 452" stroke="#0F0F0F" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M158 440 C150 458 148 470 145 485 C152 470 162 458 168 445" stroke="#0F0F0F" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+  <!-- Fin / mane spikes on top of body -->
+  <path d="M215 175 C208 155 200 140 205 125" stroke="#0F0F0F" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M225 165 C215 143 210 128 218 112" stroke="#0F0F0F" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M240 158 C234 135 232 118 242 103" stroke="#0F0F0F" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- Tail tip -->
+  <path d="M240 578 C228 590 215 598 205 592 C218 590 230 582 238 572 C232 586 222 594 218 588" fill="#0F0F0F" stroke="none"/>
+</svg>
